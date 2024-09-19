@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин одягу</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F7E7CE; /* Новий колір фону */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            margin: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+            form input, form select, form textarea {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Галерея товарів</h2>
+        <div class="image-gallery">
+            <img src="футболка.jpg" alt="Футболка">
+            <img src="штани.jpg" alt="Штани">
+        </div>
+    </section>
+
+    <section>
+        <h2>Таблиця розмірів</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Розмір</th>
+                    <th>Обхват грудей (см)</th>
+                    <th>Обхват талії (см)</th>
+                    <th>Обхват стегон (см)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S</td>
+                    <td>88-92</td>
+                    <td>72-76</td>
+                    <td>92-96</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>92-96</td>
+                    <td>76-80</td>
+                    <td>96-100</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>96-100</td>
+                    <td>80-84</td>
+                    <td>100-104</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Популярні категорії</h2>
+        <ul>
+            <li>Футболки</li>
+            <li>Штани</li>
+            <li>Куртки</li>
+            <li>Сукні</li>
+        </ul>
+
+        <h2>Кроки для оформлення замовлення</h2>
+        <ol>
+            <li>Оберіть товар і додайте його до кошика.</li>
+            <li>Перевірте кошик і оформіть замовлення.</li>
+            <li>Заповніть інформацію для доставки.</li>
+            <li>Підтвердіть замовлення та оплатіть.</li>
+        </ol>
+    </section>
+
+        <p>
+            <a href="https://docs.google.com/spreadsheets/d/17S9Vlde8vuH7AQ8MiKdE87nWYAU43x_A059je1LClXo/edit?usp=drive_link" target="_blank">
+               Посилання 
+            </a>
+        </p>
+  
+ <section>
+        <h2>Форма зворотного зв'язку</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Відправити</button>
+        </form>
+    </section>
+</body>
+</html>
